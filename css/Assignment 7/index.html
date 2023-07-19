@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mohammad" content=mohammad initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Solar system
+    </title>
+</head>
+<style>
+    body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+.header-menu span{
+    margin: 20px 30px;
+    cursor: pointer;
+}
+
+.header-menu-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-image: url("shutterstock-577527586.jpg");
+    font-size: 100px;
+}
+
+.section-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 80px 30px;
+}
+
+.section-two .item{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    width: 25%;
+    height: 600px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 9px 0px #fff;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 600px;
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.description h3{
+    padding: 50px 0;
+}
+
+.item-pic img{
+    width: 200px;
+}
+
+.item .item-desc{
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.section-three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    /* height: 400px; */
+    padding: 50px 0;
+}
+
+.section-three-title{
+    text-align: center;
+    width: 95%;
+    /* border-bottom: solid 1px; */
+}
+
+
+.section-three-members{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.member img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.member img:hover{
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.section-for{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    /* height: 550px; */
+}
+
+.section-for .items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    /* height: 400px; */
+}
+
+.section-for .title{
+    text-align: center;
+}
+
+.items .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    margin: 30px;
+    height: 350px;
+    background-color: rgb(39, 32, 32);
+    box-shadow: 1px 1px 9px 0px #fff;
+    padding: 25px;
+    
+}
+
+.item .item-top{
+    width: 100%;
+    text-align: center;
+    background-image: url("NGC-6357-خوشه-ستاره_ای.jpg");
+    background-size: contain;
+    padding: 10px;
+
+}
+
+.section-six{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 100px 0px;
+    margin-bottom: 100px;
+    /* height: 450px; */
+    background-image: url("NGC-6357-خوشه-ستاره_ای.jpg");
+    background-size: cover;
+}
+
+.section-six h2{
+    padding-left: 80px;
+}
+
+.follow-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.follow-us img{
+    width: 48px;
+    padding: 10px;
+}
+
+.section-five{
+    width: 100%;
+    height: 500px;
+    background-image: url("img/milky_way_2.jpeg");
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.contact-us .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:40%;
+    height: 250px;
+    box-shadow: 1px 1px 9px 0px #fff;
+}
+
+.contact-us .right input{
+    width: 80%;
+    height: 45px;
+    border: 0;
+    border-radius: 2px;
+}
+
+.contact-us .right textarea{
+    width: 80%;
+    border: 0;
+    border-radius: 2px;
+}
+
+.contact-us .right button{
+    width: 30%;
+    height: 45px;
+    border: 0;
+    border-radius: 2px;
+}
+
+.contact-us .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 40%;
+    height: 200px;
+}
+
+@keyframes rotateIn {
+    0% {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, -200deg);
+        transform: rotate3d(0, 0, 1, -200deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .section-one{
+        font-size: 36px;
+        height: 400px;
+    }
+    
+    .header-menu{
+        font-size: 12px;
+        
+    }
+    .header-menu span{
+        margin: 10px;
+    }
+
+    .section-two .item{
+        width: 48%;
+        margin: 0;
+    }
+
+    .description{
+        width: 43%;
+        margin: 0;
+    }
+    
+    .items .item{
+        width: 100%;
+    }
+
+    .item-i{
+        padding: 90px;
+    }
+
+    .section-six h2 {
+        padding-left: 40px;
+        font-size: 18px;
+    }
+
+    .member{
+        width: 33%;
+        margin-bottom: 20px;
+    }
+
+    .section-five{
+        margin-bottom: 0px;
+        background-size: contain;
+        height: 300px;
+        background-repeat: no-repeat;
+    }
+
+    .contact-us{
+        flex-direction: column;
+    }
+
+    .contact-us .right, .contact-us .left{
+        width: 80%;
+    }
+
+    .follow-us img{
+        width: 28px;
+    }
+
+    .follow-us{
+        margin-top: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 40px) {
+    .section-one{
+        font-size: 4000px;
+        height: 400px;
+    }
+    
+    .header-menu{
+        font-size: 12px;
+        
+    }
+    .header-menu span{
+        margin: 10px;
+    }
+
+    .section-two{
+        padding: 30px;
+    }
+
+    .section-two .item{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .items .item{
+        width: 100%;
+    
+    }
+
+    .item-i{
+        padding: 5px;
+    }
+
+    .section-six h2 {
+        padding-left: 40px;
+        font-size: 18px;
+    }
+
+    .member{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+
+
+    .contact-us{
+        flex-direction: column;
+    }
+
+    .contact-us .right, .contact-us .left{
+        width: 80%;
+    }
+
+    .follow-us img{
+        width: 28px;
+    }
+
+    .follow-us{
+        margin-top: 50px;
+    }
+
+    .description{
+        height: 450px;
+        width: 100%;
+    }
+    
+}
+</style>
+<body>
+    <div class="header-menu">
+        <div class="header-menu-right">
+            <span>
+                <img src="img/nasa-logo.png" alt="" width="50px">
+            </span>
+            <span>Home</span>
+            <span>Galleries</span>
+            <span>Downloads</span>
+            <span>About</span>
+        </div>
+        <div>
+            <span>Sign in</span>
+        </div>
+    </div>
+
+    <div class="section-one">
+        
+        <img src="">
+    </div>
+
+    <div class="section-two">
+        <div class="description">
+            <h3>سیاره زمین چیست؟
+            </h3>  سیاره خانه ما یعنی سیاره زمین 
+            سومین سیاره از خورشید و تنها مکانی از منظومه شمسی است 
+            که تاکنون می‌شناسیم و موجودات زنده در آن ساکن هستند. در حالی که سیاره زمین پنجمین سیاره بزرگ منظومه شمسی است
+            ، اما تنها سیاره‌ای است که دارای آب مایع روی سطح خود است. کره زمین که کمی بزرگتر از سیاره ناهید است
+             بین چهار سیاره نزدیک به خورشید که همگی از سنگ و فلز ساخته شده‌اند، بزرگترین است.
+        </div>
+        <div class="item">
+            <div class="item-pic">
+                <img src="unnamed.jpg" alt="BLACK EYE GALAXY">
+            </div>
+            <div class="item-desc">
+                <h4>سیاره زمین </h4>
+                نام سیاره زمین حداقل 1000 سال قدمت دارد
+                . همه این سیارات به غیر از زمین به نام خدایان و الهه‌های یونانی و رومی نامگذاری شده‌اند. با این حال نام زمین یک کلمه آلمانی است که به معنای ساده The Ground است.
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-pic">
+                <img src="3304016_576.jpg" alt="ANDROMEDA">
+            </div>
+            <div class="item-desc">
+                <h4>سیاره زحل</h4>
+                زحل ششمین سیاره از خورشید و دومین سیاره بزرگ منظومه شمسی است. زحل به سبب داشتن هزاران حلقه در اطراف خود در میان سیارات بسیار مشهور است و این در حالی است که سیارات دیگری نیز وجود دارند که در اطراف خود حلقه‌هایی دارند که از تکه‌های یخ و سنگ ساخته شده، اما هیچ یک از این سیارات به سبب حلقه‌های اطراف خود تا این حد معروف نبوده و هیچ یک به اندازه سیاره زحل دیدنی و جذاب نیستند.
+
+زحل با داشتن بیش از 60 قمر شناخته شده، جذاب‌ترین مناظر منظومه شمسی را در خود جای داده است
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-pic">
+                <img src="0efa5291133d1425e279498eec6d4cc8.jpeg" alt="CARTWHEEL">
+            </div>
+            <div class="item-desc">
+                <h4>سیاره مشتری</h4>
+                سیاره مشتری پنجمین سیاره نسبت به خورشید است و تقریباً بزرگترین سیاره در منظومه شمسی است و بیش از دو برابر سایر سیارات این منظومه جرم دارد. نوارهای روی سیاره مشتری و چرخش آن در واقع ابرهای سرد و بادی از آمونیاک و آب هستند که در جوی از هیدروژن و هلیوم شناورند. لکه سرخ بزرگ نمادین سیاره مشتری طوفانی غول پیکر بزرگتر از زمین بوده و صدها سال است که در جریان است.
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="section-for">
+        <div class="title">
+            <!-- <h2>hhosdhodshvoij</h2>
+            <br> -->
+            <!-- <h4>fidoj doifjg doigjoidfg odihgf duhfgi dfugh dfhg</h4> -->
+        </div>
+        <div class="items">
+            <div class="item">
+                <div class="item-top"><h2>Mariner 9</h2></div>
+                <div class="item-i">50 Years Ago: Mariner 9 Enters Mars Orbit</div>
+                <div class="item-i">Mars 1971</div>
+                <div class="item-i">lorem ipsum</div>
+                <div class="item-i">lorem ipsum</div>
+                <div class="item-down">see more...</div>
+            </div>
+            <div class="item">
+                <div class="item-top"><h2>Shuttle Columbia</h2></div>
+                <div class="item-i">40 Years Ago: Columbia Returns to Space on the STS-2 Mission</div>
+                <div class="item-i">Nov 1981</div>
+                <div class="item-i">lorem ipsum</div>
+                <div class="item-i">lorem ipsum</div>
+                <div class="item-down">see more...</div>
+            </div>
+            <div class="item">
+                <div class="item-top"><h2>Gemini XII</h2></div>
+                <div class="item-i">55 Years Ago: Gemini XII Closes Out a Successful Program</div>
+                <div class="item-i">June 1966</div>
+                <div class="item-i">lorem ipsum</div>
+                <div class="item-i">lorem ipsum</div>
+                <div class="item-down">see more...</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-three">
+        <div class="section-three-title">
+            <h2>Our Team</h2>
+        </div>
+
+        <div class="section-three-members">
+            <div class="member">
+                <img src="محمد.jpg" alt="General Lester L. Lyles">
+                <h4>Johnny Walker
+                </h4>
+                <h5> Support
+
+                </h5>
+            </div>
+            <div class="member">
+                <img src="محمد.jpg" alt="Krista Paquin">
+                <h4>mohammad-nematizadeh</h4>
+                <h5>Web Designer
+                </h5>
+            </div>
+            
+            <div class="member">
+                <img src="محمد.jpg" alt="Maryam Boneh">
+                <h4>Maryam Boneh</h4>
+                <h5>Boss man
+
+                </h5>
+            </div>
+            <div class="member">
+                <img src="محمد.jpg" alt="John W. Borghese">
+                <h4>Kai Ringo
+                </h4>
+                <h5>Fixer</h5>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section-five">
+        <img src="3915823_295.jpg" width="2000px">
+
+    </div>
+
+    <div class="contact-us">
+        <div class="left">
+            <span>
+                
+                <i class="material-icons">place</i> &nbsp;&nbsp;&nbsp;
+                300 E. Street SW, Suite 5R30
+                Washington, DC 20546
+            </span>
+            <span>
+                <i class="material-icons">phone</i> &nbsp;&nbsp;&nbsp;
+                (202) 358-0001 (Office)
+            </span>
+            <span>
+                <i class="material-icons">phone</i> &nbsp;&nbsp;&nbsp;
+                (202) 358-4338 (Fax)
+            </span>
+        </div>
+        <div class="right">
+            <input type="email" placeholder="youremailaddress@email.com">
+            <textarea name="" id="" cols="30" rows="5" placeholder="youe massage..."></textarea>
+            <button>Send</button>
+        </div>
+    </div>
+
+    <div class="follow-us">
+        <span>follow us:</span>
+        <span>
+            <img src="instagram-logo.png" alt="instagram-logo">
+            <img src="Facebook-logo.png" alt="Facebook-logo">
+            <img src="telegram-logo.png" alt="telegram-logo">
+            <img src="Twitter-logo.png" alt="Twitter-logo">
+        </span>
+        <span>National Aeronautics and Space Administration</span>
+    </div>
+
+</body>
+</html>

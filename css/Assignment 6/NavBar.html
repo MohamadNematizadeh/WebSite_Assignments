@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>my menu</title>
+</head>
+<style>
+    body{
+    margin: 0px;
+  }
+  
+  .back{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 40px;
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(to bottom, #04f07a, #d6f17e);
+  }
+  
+  ul {
+    width: 90%;
+    list-style-type: none;
+    padding: 0;
+    background-color: rgba(59, 40, 40, 0.3);
+    border-radius: 3px;
+  }
+  
+  li {
+    float: left;
+    width: 100px;
+  }
+  
+  li a {
+    display: block;
+    width: 100px;
+    color: white;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgba(250, 244, 244, 0.5);
+    color: #444;
+  }
+  
+  .subnav-content{
+    display: none;
+  }
+  
+  li:hover .subnav-content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color:royalblue;
+    width: max-content;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+</style>
+<body>
+    <div class="back">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a>
+                <div class="subnav-content">
+                    <a href="#financial">financial</a>
+                    <a href="#weather">weather</a>
+                    <a href="#iranian">iranian</a>
+                    <a href="#sports">sports</a>
+                  </div>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About us</a></li>
+          </ul>
+    </div>
+</body>
+</html>

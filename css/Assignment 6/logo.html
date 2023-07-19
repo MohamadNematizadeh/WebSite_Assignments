@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>love you forever</title>
+</head>
+<style>
+    
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.heart{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-left: 30px;
+}
+
+span{
+    display: flex;
+    flex-direction: row;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: #b85b5b;
+    border-radius: 50%;
+}
+
+.square{
+    width: 127px;
+    height: 127px;
+    background-color: #c25f5f;
+    transform: rotateZ(45deg);
+    position: absolute;
+    left: 74px;
+    top: 25px;
+    border-radius: 100% 0% 0% 0%;
+}
+
+.forever{
+    display: flex;
+}
+
+.monhani{
+    width: 100px;
+    height: 100px;
+    border: 0.5rem solid #be4b4b;
+    border-radius: 50% 50% 0;
+}
+
+.chap{
+    transform: rotateZ(-45deg);
+}
+
+.rast{
+    transform: rotateZ(135deg);
+    position: absolute;
+    left: 160px
+}
+
+</style>
+<body>
+    <div class="main">
+        <div class="heart">
+            <span>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </span>
+            <div class="square"></div>
+        </div>
+        <div class="forever">
+            <div class="monhani chap"></div>
+            <div class="monhani rast"></div>
+        </div>
+    </div>
+</body>
+</html>
