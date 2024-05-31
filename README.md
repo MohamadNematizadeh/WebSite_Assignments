@@ -3,5 +3,5 @@
 
 | # | Title                                       | Description                                             |
 | - | ------------------------------------------- | ------------------------------------------------------- |
-| 1 | [Htmll](./html/)                         | Websit with html language            |
-| 2 | [css](./css/)                         |  Web designer with css language    |
+| 1 | [Html](./html/)                         | Websit with html language            |
+| 2 | [Css](./css/)                         |  Web designer with css language    |
